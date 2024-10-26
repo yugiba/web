@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusion Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        /* Glow effect for the title */
+        #fusion-hub-title {
+            font-size: 3em;
+            text-align: center;
+            color: #fff;
+            text-shadow: 
+                0 0 5px rgba(255, 255, 255, 0.6),
+                0 0 10px rgba(255, 255, 255, 0.4),
+                0 0 15px rgba(255, 255, 255, 0.3),
+                0 0 20px rgba(255, 255, 255, 0.2);
+        }
+
+        /* Reduced glow effect for the description */
+        #fusion-hub-description {
+            text-align: center;
+            color: #fff;
+            text-shadow: 
+                0 0 3px rgba(255, 255, 255, 0.4),
+                0 0 6px rgba(255, 255, 255, 0.3),
+                0 0 9px rgba(255, 255, 255, 0.2);
+            opacity: 0; /* Start hidden */
+        }
+
+        /* Ensure hidden elements start with opacity 0 */
+        #discord-btn {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab-bar animate__animated animate__fadeInDown">
+        <div id="home-tab" class="tab active">Home</div>
+        <div id="key-tab" class="tab">Key</div>
+        <div id="partners-tab" class="tab">Partners</div>
+        <div class="tab" id="staff-tab">Staff</div>
+    </div>
+    <div id="home-content" class="tab-content">
+        <h1 id="fusion-hub-title" class="animate__animated animate__fadeInDown">Fusion Hub</h1>
+        <p id="fusion-hub-description">Your go-to script hub for efficiency and <span id="power">power</span>.</p>
+        <a href="https://discord.gg/fusionhub" id="discord-btn" class="btn" style="display:block;margin: 0 auto;text-align:center;">Join Our Discord Server</a>
+    </div>
+   
+    </div><div id="partners-content" class="tab-content" style="display: none;">
+    <h2 id="partners-title" class="animate__animated animate__fadeInDown">Our Partners</h2>
+    <div id="partners-list">
+        <!-- Example Partner Card -->
+        <div class="partner-card animate__animated animate__fadeInUp">
+            <img src="https://assets.onecompiler.app/42pra5ekm/42pra2224/1000003364.png" alt="Partner Logo" class="partner-logo">
+            <div class="partner-info">
+                <h3>Obsydian Hub</h3>
+                <p>They are the start of Fusion Hub, they gave us inspiration, go check them out.</p>
+                <a href="https://discord.gg/ZbTbDzynPZ" target="_blank" class="partner-link">Visit Partner</a>
+            </div>
+        </div>
+
+        <!-- Additional Partner Cards -->
+
+
+        <!-- Add more partners as needed -->
+    </div>
+</div>
+<div id="key-content" class="tab-content">
+    <div class="key-container">
+        <h2 class="key-title">Your Fusion Hub Key</h2>
+        <p class="key-description">Click the button below to reveal your key.</p>
+        <button id="reveal-key-btn" class="btn reveal-btn">Reveal Key</button>
+        <div id="key-display" class="key-display hidden">
+            <p class="key-text">No key yet</p>
+        </div>
+    </div>
+</div>
+
+<div id="staff-content" class="tab-content">
+    <h2 id="staff-title">Our Team</h2>
+    <div id="staff-tree">
+        <!-- Main Revivers -->
+        <div class="staff-group">
+            <h3 class="group-title">The Main Revivers</h3>
+            <ul>
+                <li>Saul Goodman</li>
+                <li>dab13sto</li>
+                <li>Pogi</li>
+            </ul>
+        </div>
+
+        <!-- Literally Aquila -->
+        <div class="staff-group">
+            <h3 class="group-title">Literally Aquila</h3>
+            <ul>
+                <li>Gus Fring</li>
+            </ul>
+        </div>
+
+        <!-- Zylo -->
+        <div class="staff-group">
+            <h3 class="group-title">Zylo</h3>
+            <ul>
+                <li>Lethal</li>
+            </ul>
+        </div>
+
+        <!-- Head Mod -->
+        <div class="staff-group">
+            <h3 class="group-title">Head Mod</h3>
+            <ul>
+                <li>Guest</li>
+            </ul>
+        </div>
+
+        <!-- Modders -->
+        <div class="staff-group">
+            <h3 class="group-title">Modders</h3>
+            <ul>
+                <li>Tanjiro</li>
+                <li>brpg</li>
+                <li>Dragon</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
